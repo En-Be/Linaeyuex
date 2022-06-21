@@ -69,7 +69,7 @@ Scales on each objet, which have their own values:
 - Morph speed (the amount the main value changes each frame)
 - Morph threshold (the amount the value has to change before it is actually shown)
 
-Scales available for adjustment by holding relevant pad and turning knob:
+Scales available for adjustment by holding relevant pad and turning knobs:
 - Size (small < big)
 - Hue (colour, cyclicle)
 - Saturation (bleached < vibrant)
@@ -77,11 +77,11 @@ Scales available for adjustment by holding relevant pad and turning knob:
 - Border vertices count (point < line < triangle < circle)
 - Border vertices radius (random < symmetrical)
 - Border shape (edges concave < edges convex)
-- Movement (slow < fast)
+- Movement towards destination (slow < fast)
 - Fill (empty < full)
 - Emit (never < every frame)
 - Particle life (1 frame < infinite)
-- Individuation (same as first objet in list < all values can morph to fully different)
+- Individuation (same as first objet in list < all values can morph to fully different. Not sure this is needed, other controls might allow it.)
 
 If one or more objets are selected, changing a scale will affect them. If no objets are selected, all will be affected.
 
@@ -92,7 +92,7 @@ Macro controls:
 
 Global controls:
 - Destination (hold in empty space)
-- Borders (destroy or loop)
+- Borders (destroy or loop, switch)
 - Remove all objets + particles (button)
 - Timescale (knob)
 
