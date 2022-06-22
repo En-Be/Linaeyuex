@@ -1,5 +1,15 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [ "jp.keijiro" ]
+    }
+  ],
+  
   "dependencies": {
+    "jp.keijiro.minis": "1.0.10",
+
     "com.unity.adaptiveperformance.samsung.android": "4.0.0",
     "com.unity.collab-proxy": "1.15.16",
     "com.unity.feature.2d": "1.0.0",

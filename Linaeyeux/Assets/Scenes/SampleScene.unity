@@ -518,7 +518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ed9253268d7a44fa1cd34c129912a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objet: {fileID: 7053134121654320368, guid: b1957812dfe6a11469588881bfaf582a, type: 3}
+  objetPrefab: {fileID: 7053134121654320368, guid: b1957812dfe6a11469588881bfaf582a, type: 3}
+  objets: []
   objetCounter: {fileID: 690686871}
 --- !u!114 &969954622 stripped
 MonoBehaviour:
@@ -529,6 +530,68 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5df7c3c57d8c85749853c3cf57fc0706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &969954623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969954618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 8a77c84272951de4b9cd0cfb00ca5ca9, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 969954624}
+        m_TargetAssemblyTypeName: MidiInput, Assembly-CSharp
+        m_MethodName: AdjustMainValue
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: cc98976d-7a2e-478d-b874-4196717679c4
+    m_ActionName: Performance/AdjustMainValue[/MidiDevice/control003]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fd218d87-9dfc-4082-a908-3a8f3d4d59ce
+    m_ActionName: Performance/Tap[/Touchscreen/press]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: Midi
+  m_DefaultActionMap: Performance
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &969954624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969954618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1643c9f6ab924bb41864edad7d42452b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1018904128
@@ -942,6 +1005,10 @@ PrefabInstance:
       propertyPath: uiText
       value: 
       objectReference: {fileID: 690686871}
+    - target: {fileID: 6431034199782198808, guid: 3fe6ed2af3ba9564a903444c081259f1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6624281609924727867, guid: 3fe6ed2af3ba9564a903444c081259f1, type: 3}
       propertyPath: m_Name
       value: GameManager

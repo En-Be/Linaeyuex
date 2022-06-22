@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+// using UnityEngine.InputSystem;
+
 
 public class TouchInput : MonoBehaviour
 {
@@ -25,17 +27,25 @@ public class TouchInput : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-                // Debug.Log("Touch began at " + touch.position);
+                Debug.Log("Touch began at " + touch.position);
                 MakeARay(touch);
             }
         }
     }
 
+    // public void Tap(InputAction.CallbackContext tap)
+    // {
+    //     Vector2 tapValue = tap.ReadValue<Vector2>();
+    //     Debug.Log("tapValue.x = " + tapValue.x);
+    //     Debug.Log("tapValue.y = " + tapValue.y);
+    //     // gameManager.AdjustMainValue(ccVal);
+    // }
+
     Vector2 ConvertToWorldSpace(Touch touch)
     {
         Vector2 point = cam.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y));
-        Debug.Log("Touch x = " + point.x);
-        Debug.Log("Touch y = " + point.y);
+        // Debug.Log("Touch x = " + point.x);
+        // Debug.Log("Touch y = " + point.y);
         return point;
     }
 

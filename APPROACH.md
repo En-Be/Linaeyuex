@@ -76,5 +76,23 @@ DONE
 
 ---
 
+## Session 005
+### 180 mins
+
 TODO
+- Get midi input
+
+DONE
+- Installed new input system packages, set unity to use both
+- Installed midi packages (https://github.com/keijiro/Minis) by modifying manifest file
+- Set up action map with 1st rotary encoder (midi channel 3) bound to an AdjustMainValueEvent
+- Objets are added and removed from a list on gamemanager
+- Objets in list have their size updated by controller, but they spawn with zero scale for some reason
+- Tried setting usb mode to midi on phone but not showing any change
+- Tried changing touch handler but got stuck
+
+---
+
+TODO
+- Fix mainvalue reset issue
 - Annotated controls diagram
