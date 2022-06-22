@@ -60,6 +60,19 @@ DONE
 
 ![001](WIP/001.gif)
 
+---
+
+## Session 004
+### 70 mins
+
+TODO
+- Tap to remove objets
+
+DONE
+- Click objets to destroy using button event
+- Raycast from target to check collision, only create new objet if colliding with plane
+- Gamemanager triggers object destruction instead of objet button
+- Objet counter is updated correctly
 
 ---
 

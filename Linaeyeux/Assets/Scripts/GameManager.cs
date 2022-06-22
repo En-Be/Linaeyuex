@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         objetCounter.text = "Objet count = " + objetCount.ToString();
-
     }
 
     public void ScreenTapped(Vector2 v)
@@ -31,6 +30,11 @@ public class GameManager : MonoBehaviour
         thisObjet.transform.Rotate(0.0f, 0.0f, r, Space.Self);
         thisObjet.GetComponent<Objet>().gameManager = this;
         objetCount++;
+    }
+
+    public void ObjetTapped(GameObject objet)
+    {
+        objet.GetComponent<Objet>().Tapped();
     }
 
     public void ObjetDestroyed()
