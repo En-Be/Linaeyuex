@@ -7,15 +7,17 @@ public class MidiInput : MonoBehaviour
 {
     private GameManager gameManager;
 
+
     void Start()
     {
         gameManager = GetComponent<GameManager>();
     }
 
-    public void AdjustMainValue(InputAction.CallbackContext midivalue)
+    public void OnAdjustMainValue(InputValue midivalue)
     {
-        float ccVal = midivalue.ReadValue<float>();
+        float ccVal = midivalue.Get<float>();
         Debug.Log("MainValue = " + ccVal);
         gameManager.AdjustMainValue(ccVal);
     }
+
 }

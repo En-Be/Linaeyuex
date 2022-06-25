@@ -93,6 +93,16 @@ DONE
 
 ---
 
+## Session 006
+### 80 mins
+
 TODO
-- Fix mainvalue reset issue
+- Fix mainvalue reset issue or change to the legacy midi packages
+
+DONE
+- Changed touches to be triggered in new system
+
+---
+
+TODO
 - Annotated controls diagram

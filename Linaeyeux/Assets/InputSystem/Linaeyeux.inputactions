@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Tap",
+                    "name": "Pressed",
                     "type": "Value",
                     "id": "fd218d87-9dfc-4082-a908-3a8f3d4d59ce",
                     "expectedControlType": "Vector2",
@@ -40,10 +40,10 @@
                     "name": "",
                     "id": "70e3b9e6-fc4a-4c11-8084-335994745796",
                     "path": "<Touchscreen>/position",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Tap",
+                    "action": "Pressed",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
