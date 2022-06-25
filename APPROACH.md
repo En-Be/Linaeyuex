@@ -101,6 +101,22 @@ TODO
 
 DONE
 - Changed touches to be triggered in new system
+- New input system (midi) throwing errors on phone build
+
+---
+
+## Session 007
+### 110 mins
+
+TODO
+- Test as windows application
+- Lots of render glitches in player/exported app
+- Tested new project with core render settings, no transparency glitches
+- Will test midi, rebuild project if all good. Doesn't need to be on android, will try making it work later
+- Midiinput and touch working in standalone windows build 
+
+DONE
+- 
 
 ---
 
