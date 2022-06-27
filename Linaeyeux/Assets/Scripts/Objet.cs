@@ -9,9 +9,10 @@ public class Objet : MonoBehaviour
     private float spawnTime;
     private float lifeTime;
 
-    private float size;
-    private float sizeMin;
-    private float sizeMax;
+    public float sizeMin;
+    public float sizeMax;
+
+    public float speed;
 
     void Start()
     {
@@ -24,16 +25,18 @@ public class Objet : MonoBehaviour
         lifeTime = Time.time - spawnTime;
         float r = Random.Range(-10.0f,10.0f);
         transform.Rotate(0.0f, 0.0f, r, Space.Self);
-        transform.Translate(Vector2.up * Time.deltaTime);
+        transform.Translate(Vector2.up * (Time.deltaTime * speed));
         CheckIfOnScreen();
     }
 
     public void UpdateSize(float f)
     {
-        Vector3 newSize = new Vector3(f,f,f);
-        transform.localScale = newSize;
-        // float newValue = (f - sizeMin) / (sizeMax - sizeMin) * 100;
-        // Debug.Log();
+        // float adjustment = transform.localScale.x + f;
+        Vector3 adjustedSize = new Vector3(f,f,f);
+        transform.localScale += adjustedSize;
+        // float clampedValue = Mathf.Clamp(transform.localScale.x, sizeMin, sizeMax);
+        // Vector3 clampedSize = new Vector3(clampedValue,clampedValue,clampedValue);
+        // transform.localScale = clampedSize;
     }
 
     void CheckIfOnScreen()

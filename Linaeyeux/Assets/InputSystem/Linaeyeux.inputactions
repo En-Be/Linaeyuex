@@ -10,18 +10,45 @@
                     "type": "PassThrough",
                     "id": "cc98976d-7a2e-478d-b874-4196717679c4",
                     "expectedControlType": "MidiValue",
-                    "processors": "Scale(factor=10)",
+                    "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Pressed",
+                    "name": "TouchingScreen",
                     "type": "Value",
                     "id": "fd218d87-9dfc-4082-a908-3a8f3d4d59ce",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "TappedScreen",
+                    "type": "Button",
+                    "id": "d23f3ab0-8e0a-40b1-be8c-3fbc88c9fde1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HoldingScreen",
+                    "type": "Button",
+                    "id": "67aef240-2e49-4be7-a152-1eb5d5f5848e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SelectFirstScale",
+                    "type": "Button",
+                    "id": "66a7df0b-d462-4c5d-88ad-243319709327",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -43,7 +70,40 @@
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Pressed",
+                    "action": "TouchingScreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73bad423-8a45-487f-a794-7231bc220362",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TappedScreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0b298842-ced8-452f-98eb-5a6efd672e22",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "HoldingScreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dceba83b-e04f-46b4-b0f3-5d0e25b658b9",
+                    "path": "<MidiDevice>/note048",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SelectFirstScale",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -110,13 +110,46 @@ DONE
 
 TODO
 - Test as windows application
+
+DONE
 - Lots of render glitches in player/exported app
 - Tested new project with core render settings, no transparency glitches
 - Will test midi, rebuild project if all good. Doesn't need to be on android, will try making it work later
 - Midiinput and touch working in standalone windows build 
+- Remake in new project
+
+---
+
+## Session 008
+### 180 mins
+
+TODO
+- Continue rebuild as windows only
+- Add objet selection
 
 DONE
-- 
+- Rearrange canvas and colliders
+- Bring back objet destruction
+- Gamemanager knows if objet/canvas are being held/tapped
+- Added a list for selected objets
+- Objets selected by holding
+- Only selected objets are affected by value changes
+- All objets are deselected by tapping canvas, or individually by holding
+- Tried adjusting individual values, confusing maths
+- Trail filter not working properly anymore
+- Realised the trailer filter works differently in Unity than Processing, and colour is lost! Will either need a different implementation or go back and add midi to the processing version
+
+---
+
+## Session 009
+### 75 mins
+
+TODO
+- Remake trail effect using render texture accumulation
+
+DONE
+- Tried using rendertextures in unity, too confusing
+- For advancing this app, VVVV might be the best option. For now, I'm going to rebuild it in Processing
 
 ---
 
